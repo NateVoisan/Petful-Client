@@ -10,25 +10,24 @@ export default function PetInfo() {
   );
   const [adoptedPet, setAdoptedPet] = useState(false);
 
-  function fiveSec(){
-
-    if(people.length < 5){
-      addName('The Smiths');
+  function fiveSec() {
+    if (people.length < 5) {
+      addName("The Smiths");
       return;
     }
 
-    if(person !== people[0] ){
+    if (person !== people[0]) {
       remove();
       return;
     }
   }
 
-  useEffect(()=>{
-    if(person === null || person === people[0]) return;
+  useEffect(() => {
+    if (person === null || person === people[0]) return;
 
-    const interval = setInterval(()=>{
+    const interval = setInterval(() => {
       fiveSec();
-      console.log('ran fivesec()')
+      console.log("ran fivesec()");
     }, 5000);
     return () => clearInterval(interval);
   });

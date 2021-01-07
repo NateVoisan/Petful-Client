@@ -1,7 +1,7 @@
 .App__Home {
     margin: auto;
     text-align: center;
-    background-color: burlywood;
+    background-color: white;
     max-width: 800px;
     padding: 5vh;
     min-height: 71vh;
@@ -9,7 +9,7 @@
   
   
   img {
-    border: solid 2px rgb(170, 132, 51);
+    border: solid 2px rgb(0, 0, 0);
     border-radius: 15px;
     width: auto;
     max-height: 20vh;
