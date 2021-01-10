@@ -21,16 +21,23 @@ function Root() {
     ])
       .then(([peopleRes, dogRes, catRes]) => {
         if(!peopleRes.ok)
-          return peopleRes.json().then((e)=>Promise.reject(e));
+          return peopleRes.json()
+            .then((e)=>Promise.reject(e));
         if(!dogRes.ok)
-          return dogRes.json().then((e)=>Promise.reject(e));
+          return dogRes.json()
+            .then((e)=>Promise.reject(e));
         if(!catRes.ok)
-          return catRes.json().then((e)=>Promise.reject(e));
+          return catRes.json()
+            .then((e)=>Promise.reject(e));
         
         return Promise.all([
           peopleRes.json(),
           dogRes.json(),
           catRes.json(),
+          console.log(people,'people console'),
+          console.log(dog,'dog console'),
+          console.log(cat,'cat console'),
+
         ]);
       })
       .then(([people, dog, cat]) => {

@@ -5,7 +5,7 @@ export default function FosterHomes(){
   const { addSelf, addName, people } = useContext(Context);
   const [name, setName] = useState('');
   const [submitted, setSubmitted] = useState(false);
-  const pComponent = people.map((person, i) => 
+  const Component = people.map((person, i) => 
     <li key={i} style={{backgroundColor: name===person && 'yellow'}}>{person}</li>);
 
   function handleName(e){
@@ -22,7 +22,7 @@ export default function FosterHomes(){
   return(
     <div>
       <ul>
-        {pComponent}
+        {Component}
       </ul>
       { !submitted &&
         <form onSubmit={(e)=>addPerson(e)}>

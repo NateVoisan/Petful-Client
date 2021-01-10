@@ -22,3 +22,9 @@
   h2{
     margin: 0;
   }
+
+  @media all and (min-width: 500px){
+    .App__Home,img, .App__Home > img:hover, h2  {
+      flex-direction: row;
+    }
+  } 
