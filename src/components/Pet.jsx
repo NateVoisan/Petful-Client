@@ -2,9 +2,10 @@ import React from 'react';
 
 export default function Pet(props){
   const { pet } = props;
+  console.log(pet, "pet.jsx log")
 
   function renderDesc(){
-    if(Object.keys(pet).length > 1){
+    if(typeof pet === "object" && Object.keys(pet).length > 1){
       return <div>
           <img src={pet.imageURL} alt={pet.name} width='400px'/>    
           <h3>Description:</h3>
@@ -17,7 +18,7 @@ export default function Pet(props){
         </div>
     }else{
       return <div>
-          <p>There are no pets at the moment. Please come back soon!.</p>
+          <p>{typeof pet === "string" ? pet:"loading..." }</p>
         </div>
     }
   }

@@ -54,14 +54,14 @@ export default function PetInfo() {
         <div className="cat">
           <h3>Cats</h3>
           {Object.keys(cat).length > 1 && person === people[0] && (
-            <button onClick={() => adopted("cats")}>Adopt A Cat</button>
+            <button onClick={() => adopted("cat")}>Adopt A Cat</button>
           )}
           <Pet pet={cat} />
         </div>
         <div className="dog">
           <h3>Dogs</h3>
           {Object.keys(dog).length > 1 && person === people[0] && (
-            <button onClick={() => adopted("dogs")}>Adopt A Dog</button>
+            <button onClick={() => adopted("dog")}>Adopt A Dog</button>
           )}
           <Pet pet={dog} />
         </div>
