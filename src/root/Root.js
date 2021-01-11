@@ -46,7 +46,7 @@ function Root() {
         setDog(dog);
       })
       .catch(error => console.error({error}));
-  }, []);
+  }, [cat, dog, people]);
 
   function addName(name){
     fetch(`${config.API_ENDPOINT}/people`, {
