@@ -13,29 +13,25 @@ function Root() {
   const [person, setPerson] = useState("");
 
   useEffect(() => {
-    fetch(`${config.API_ENDPOINT}/pets/dogs`)
-    .then((res)=> {
-      if(res.ok)
-        return res.json()
-        .then((data) => {
-          setDog(data.data)
-          console.log(data, "setDog console")
-        })
-        
-      throw(res.statusText)
-    })
-    // fetch(`${config.API_ENDPOINT}/pets/cats`)
-    // .then((res)=> {
-    //   if(res.ok)
-    //     return res.json()
-    //     .then((data) => {
-    //       setCat(data.data)
-    //       console.log(data, "setCat console")
-    //     })
-        
-    //   throw(res.statusText)
-    // })
-    
+    fetch(`${config.API_ENDPOINT}/pets/dogs`).then((res) => {
+      if (res.ok)
+        return res.json().then((data) => {
+          setDog(data.data);
+          // console.log(data, "setDog console")
+        });
+
+      throw res.statusText;
+    });
+    fetch(`${config.API_ENDPOINT}/pets/cats`).then((res) => {
+      if (res.ok)
+        return res.json().then((data) => {
+          setCat(data.data);
+          // console.log(data, "setCat console")
+        });
+
+      throw res.statusText;
+    });
+
     // fetch(`${config.API_ENDPOINT}/pets/cats`)
     // .then((res)=> {
     //   if(res.ok)
@@ -46,30 +42,28 @@ function Root() {
     //     .catch(() => {
     //       res.text()
     //       .then((data)=>{
-    //         setCat(data) 
+    //         setCat(data)
     //       })
     //     })
     //   throw(res.statusText)
     // })
-    
 
-    Promise.all([
-      fetch(`${config.API_ENDPOINT}/people`),
-    ])
+    Promise.all([fetch(`${config.API_ENDPOINT}/people`)])
       .then(([peopleRes]) => {
-        if (!peopleRes.ok) return peopleRes.json().then((e) => Promise.reject(e));
+        if (!peopleRes.ok)
+          return peopleRes.json().then((e) => Promise.reject(e));
 
         return Promise.all([
           peopleRes.json(),
-          console.log(people, "people console"),
+          // console.log(people, "people console"),
         ]);
       })
       .then(([people]) => {
         setPeople(people.data);
       })
       .catch((error) => console.error({ error }));
-  // }, [people, dog, cat]);
-  },[]);
+    // }, [people, dog, cat]);
+  }, [people]);
 
   function addName(name) {
     fetch(`${config.API_ENDPOINT}/people`, {
@@ -91,12 +85,12 @@ function Root() {
 
   function remove(type = null) {
     let pet;
-    if (type) {pet = type}
-
-    else {
+    if (type) {
+      pet = type;
+    } else {
       const c = Object.keys(cat).length;
       const d = Object.keys(dog).length;
-      pet = Math.floor(Math.random() * 2) ? "cat":"dog";
+      pet = Math.floor(Math.random() * 2) ? "cat" : "dog";
       if (c === 0 && d === 0) return;
       if (c === 0) pet = "dog";
       if (d === 0) pet = "cat";

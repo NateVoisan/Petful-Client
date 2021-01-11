@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 export default React.createContext({
   people: [],
   cat: {},
   dog: {},
-  person: '',
-  addName: ()=>{},
-  removePerson: ()=>{},
-  remove: ()=>{},
+  person: "",
+  addName: () => {},
+  removePerson: () => {},
+  remove: () => {},
   addSelf: () => {},
 });

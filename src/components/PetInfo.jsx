@@ -27,7 +27,7 @@ export default function PetInfo() {
 
     const interval = setInterval(() => {
       fiveSec();
-      console.log("ran fivesec()");
+      // console.log("ran fivesec()");
     }, 5000);
     return () => clearInterval(interval);
   });

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
-import Context from '../ApiContext';
+import Context from "../ApiContext";
 import "./Description.css";
 
 export default function Description() {
@@ -8,7 +8,7 @@ export default function Description() {
   const { addSelf } = useContext(Context);
 
   function adopt() {
-    addSelf('');
+    addSelf("");
     history.push("/pets");
   }
 
@@ -35,7 +35,7 @@ export default function Description() {
       <img
         alt="adopt-me"
         onClick={() => adopt()}
-        tabIndex= "0"
+        tabIndex="0"
         src="https://media.kget.com/nxsglobal/kerngoldenempire/feature_pages/Clear-The-Shelters/2020/adopt-a-pet.jpg"
       />
     </div>
