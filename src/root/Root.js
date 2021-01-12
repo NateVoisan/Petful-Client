@@ -13,7 +13,7 @@ function Root() {
   const [person, setPerson] = useState("");
 
   useEffect(() => {
-    fetch(`${config.API_ENDPOINT}/pets/dogs`).then((res) => {
+    fetch(`${config.API_ENDPOINT}/pets/dog`).then((res) => {
       if (res.ok)
         return res.json().then((data) => {
           setDog(data.data);
@@ -22,7 +22,8 @@ function Root() {
 
       throw res.statusText;
     });
-    fetch(`${config.API_ENDPOINT}/pets/cats`).then((res) => {
+
+    fetch(`${config.API_ENDPOINT}/pets/cat`).then((res) => {
       if (res.ok)
         return res.json().then((data) => {
           setCat(data.data);
@@ -32,7 +33,7 @@ function Root() {
       throw res.statusText;
     });
 
-    // fetch(`${config.API_ENDPOINT}/pets/cats`)
+    // fetch(`${config.API_ENDPOINT}/pets/cat`)
     // .then((res)=> {
     //   if(res.ok)
     //     return res.json()
@@ -63,7 +64,7 @@ function Root() {
       })
       .catch((error) => console.error({ error }));
     // }, [people, dog, cat]);
-  }, [people]);
+  }, []);
 
   function addName(name) {
     fetch(`${config.API_ENDPOINT}/people`, {
@@ -121,7 +122,7 @@ function Root() {
       })
       .then(([petRes]) => {
         setPeople(people.slice(1));
-        pet === "cats" ? setCat(petRes) : setDog(petRes);
+        pet === "cat" ? setCat(petRes) : setDog(petRes);
       })
       .catch((e) => console.error(e));
   }
