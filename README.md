@@ -1,7 +1,11 @@
 # Petful Client
-[Live Link](https://petful-client-gamma.vercel.app).
+[Vercel Link](https://petful-client-gamma.vercel.app)
+[Client Repo](https://github.com/AngeloThinks/petful-client.git)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Heroku Live App](https://pacific-chamber-02247.herokuapp.com)
+[Server Repo](https://github.com/AngeloThinks/petful-server.git)
+
+
 
 ## Available Scripts
 
