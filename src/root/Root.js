@@ -33,22 +33,6 @@ function Root() {
       throw res.statusText;
     });
 
-    // fetch(`${config.API_ENDPOINT}/pets/cat`)
-    // .then((res)=> {
-    //   if(res.ok)
-    //     return res.json()
-    //     .then((data) => {
-    //       setCat(data)
-    //     })
-    //     .catch(() => {
-    //       res.text()
-    //       .then((data)=>{
-    //         setCat(data)
-    //       })
-    //     })
-    //   throw(res.statusText)
-    // })
-
     Promise.all([fetch(`${config.API_ENDPOINT}/people`)])
       .then(([peopleRes]) => {
         if (!peopleRes.ok)
