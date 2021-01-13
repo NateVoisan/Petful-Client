@@ -22,7 +22,7 @@ The adoption process works strictly on a "First-in, First-Out" basis. The FIFO i
     *Knex
 
 ## Landing Page
-![Alt text](screenshots/petful-landing-page.png"Petful Landing Page")
+![Dashboard](/screenshots/petful-landing-page.png"Petful Landing Page")
 
 
 ## Adoption Page
