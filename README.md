@@ -3,7 +3,7 @@
 [Client Repo](https://github.com/AngeloThinks/petful-client.git)
 
 [Heroku Live App](https://pacific-chamber-02247.herokuapp.com)
-[Server Repo](https://github.com/AngeloThinks/petful-server.git)
+[Server Repo/API Repo](https://github.com/AngeloThinks/petful-server.git)
 
 ## About:
 Petful simulates a web application for a pet adoption service. The application maintains two queues: one for available dogs, and another for avaialble cats. The application also displays the people that are in line to adopt a pet. The application simulates pet adoption by scrolling through cats and dogs; making each pet available for adoption when the queue reaches the user's name. 
