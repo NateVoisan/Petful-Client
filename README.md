@@ -1,11 +1,37 @@
 # Petful Client
-[Vercel Link](https://petful-client-gamma.vercel.app)
+[Live App](https://petful-client-gamma.vercel.app)
 [Client Repo](https://github.com/AngeloThinks/petful-client.git)
 
 [Heroku Live App](https://pacific-chamber-02247.herokuapp.com)
 [Server Repo](https://github.com/AngeloThinks/petful-server.git)
 
+## About:
+Petful simulates a web application for a pet adoption service. The application maintains two queues: one for available dogs, and another for avaialble cats. The application also displays the people that are in line to adopt a pet. The application simulates pet adoption by scrolling through cats and dogs; making each pet available for adoption when the queue reaches the user's name. 
 
+## How it works
+The adoption process works strictly on a "First-in, First-Out" basis. The FIFO is based on the animals that came to the shelter first. People can adopt a cat, or a dog. As you enter the adoption page, the user will enter their name and be added to the queue. 
+
+## Technologies Used
+## Frontend
+    *JavaScript
+    *React
+    *React-Router
+## Backend
+    *NodeJS
+    *Express
+    *Knex
+
+## Landing Page
+<img width="901" alt="homepage" src="![petful-landing-page](https://user-images.githubusercontent.com/67927805/104506480-12510400-55ab-11eb-9787-82959d4fed62.png)">
+
+## Adoption Page
+<img width="901" alt="homepage" src="![petful-adoption-page](https://user-images.githubusercontent.com/67927805/104506794-78d62200-55ab-11eb-83bc-d32802fde615.png)">
+
+## Add Name Section
+<img width="901" alt="homepage" src="![petful-add-name](https://user-images.githubusercontent.com/67927805/104506974-b935a000-55ab-11eb-8a51-ce0319afbab3.png)">
+
+## Adoption Success
+<img width="901" alt="homepage" src="![petful-adoption-success](https://user-images.githubusercontent.com/67927805/104507077-d9fdf580-55ab-11eb-983f-d2663f5bd232.png)">
 
 ## Available Scripts
 
