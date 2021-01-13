@@ -22,16 +22,17 @@ The adoption process works strictly on a "First-in, First-Out" basis. The FIFO i
     *Knex
 
 ## Landing Page
-<img width="901" alt="homepage" src="![petful-landing-page](https://user-images.githubusercontent.com/67927805/104506480-12510400-55ab-11eb-9787-82959d4fed62.png)">
+![Alt text](screenshots/petful-landing-page.png"Petful Landing Page")
+
 
 ## Adoption Page
-<img width="901" alt="homepage" src="![petful-adoption-page](https://user-images.githubusercontent.com/67927805/104506794-78d62200-55ab-11eb-83bc-d32802fde615.png)">
+[petful-adoption-page](https://user-images.githubusercontent.com/67927805/104506794-78d62200-55ab-11eb-83bc-d32802fde615.png)
 
 ## Add Name Section
-<img width="901" alt="homepage" src="![petful-add-name](https://user-images.githubusercontent.com/67927805/104506974-b935a000-55ab-11eb-8a51-ce0319afbab3.png)">
+[petful-add-name](https://user-images.githubusercontent.com/67927805/104506974-b935a000-55ab-11eb-8a51-ce0319afbab3.png)
 
 ## Adoption Success
-<img width="901" alt="homepage" src="![petful-adoption-success](https://user-images.githubusercontent.com/67927805/104507077-d9fdf580-55ab-11eb-983f-d2663f5bd232.png)">
+[petful-adoption-success](https://user-images.githubusercontent.com/67927805/104507077-d9fdf580-55ab-11eb-983f-d2663f5bd232.png)
 
 ## Available Scripts
 
