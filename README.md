@@ -22,17 +22,17 @@ The adoption process works strictly on a "First-in, First-Out" basis. The FIFO i
     *Knex
 
 ## Landing Page
-![Landing Page](/screenshots/petful-landing-page.png)
+![Petful Landing Page](/screenshots/petful-landing-page.png)
 
 
 ## Adoption Page
-[petful-adoption-page](https://user-images.githubusercontent.com/67927805/104506794-78d62200-55ab-11eb-83bc-d32802fde615.png)
+![petful-adoption-page](/screenshots/petful-adoption-page.png)
 
 ## Add Name Section
-[petful-add-name](https://user-images.githubusercontent.com/67927805/104506974-b935a000-55ab-11eb-8a51-ce0319afbab3.png)
+![petful-add-name](/screenshots/petful-add-name.png)
 
 ## Adoption Success
-[petful-adoption-success](https://user-images.githubusercontent.com/67927805/104507077-d9fdf580-55ab-11eb-983f-d2663f5bd232.png)
+![petful-adoption-success](/screenshots/petful-adoption-success.png)
 
 ## Available Scripts
 
