@@ -2,7 +2,6 @@ import React from "react";
 
 export default function Pet(props) {
   const { pet } = props;
-  // console.log(pet, "pet.jsx log")
 
   function renderDesc() {
     if (typeof pet === "object" && Object.keys(pet).length > 1) {

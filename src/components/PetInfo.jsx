@@ -11,9 +11,8 @@ export default function PetInfo() {
   const [adoptedPet, setAdoptedPet] = useState(false);
 
   function fiveSec() {
-    console.log("fiveSec log")
     if (people.length < 5) {
-      addName("The Smiths");
+      addName("The Jones'");
       return;
     }
 
@@ -28,7 +27,6 @@ export default function PetInfo() {
 
     const interval = setInterval(() => {
       fiveSec();
-      console.log("ran fivesec()");
     }, 5000);
     return () => clearInterval(interval);
   });

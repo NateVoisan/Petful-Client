@@ -17,7 +17,6 @@ function Root() {
       if (res.ok)
         return res.json().then((data) => {
           setDog(data.data);
-          // console.log(data, "setDog console")
         });
 
       throw res.statusText;
@@ -27,7 +26,6 @@ function Root() {
       if (res.ok)
         return res.json().then((data) => {
           setCat(data.data);
-          // console.log(data, "setCat console")
         });
 
       throw res.statusText;
@@ -40,14 +38,12 @@ function Root() {
 
         return Promise.all([
           peopleRes.json(),
-          // console.log(people, "people console"),
         ]);
       })
       .then(([people]) => {
         setPeople(people.data);
       })
       .catch((error) => console.error({ error }));
-    // }, [people, dog, cat]);
   }, []);
 
   function addName(name) {
