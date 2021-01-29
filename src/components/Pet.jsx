@@ -8,7 +8,6 @@ export default function Pet(props) {
       return (
         <div>
           <img src={pet.imageURL} alt={pet.name} width="400px" />
-          <h3>Description:</h3>
           <p>
             <strong>Name:</strong> {pet.name}
             <br />

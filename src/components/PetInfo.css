@@ -11,10 +11,11 @@
 
 .Pet__Info {
   text-align: center;
-  background-color: white;
-  padding: 5vh;
+  background-color: #444444;
+  padding: 1vh;
   max-width: 800px;
   margin: auto;
+  border-radius: 20px;
 }
 
 ul {
@@ -23,11 +24,17 @@ ul {
 }
 
 .Congratulations {
-  color: red;
+  color: lightgreen;
 }
 
 h2 {
   margin-bottom: 10px;
+}
+
+button {
+  background-color: #444444;
+  outline-style: none;
+  color: white;
 }
 
 @media all and (min-width: 500px) {

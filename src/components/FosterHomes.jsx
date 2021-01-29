@@ -6,7 +6,7 @@ export default function FosterHomes() {
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const Component = people.map((person, i) => (
-    <li key={i} style={{ backgroundColor: name === person && "yellow" }}>
+    <li key={i} style={{ backgroundColor: name === person && "red" }}>
       {person}
     </li>
   ));

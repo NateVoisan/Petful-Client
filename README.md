@@ -1,11 +1,11 @@
 # Petful Client
 [Live App](https://petful-client-gamma.vercel.app)
 
-[Client Repo](https://github.com/AngeloThinks/petful-client.git)
+[Client Repo](https://github.com/NateVoisan/petful-client)
 
 [Heroku Live App](https://pacific-chamber-02247.herokuapp.com)
 
-[Server Repo/API Repo](https://github.com/AngeloThinks/petful-server.git)
+[Server Repo/API Repo](https://github.com/NateVoisan/petful-server)
 
 ## About:
 Petful simulates a web application for a pet adoption service. The application maintains two queues: one for available dogs, and another for avaialble cats. The application also displays the people that are in line to adopt a pet. The application simulates pet adoption by scrolling through cats and dogs; making each pet available for adoption when the queue reaches the user's name. 
@@ -26,12 +26,14 @@ The adoption process works strictly on a "First-in, First-Out" basis. The FIFO i
 ## Landing Page
 ![Petful Landing Page](/screenshots/petful-landing-page.png)
 
-
 ## Adoption Page
 ![petful-adoption-page](/screenshots/petful-adoption-page.png)
 
 ## Add Name Section
 ![petful-add-name](/screenshots/petful-add-name.png)
+
+## Your turn Section
+![petful-my-turn](/screenshots/petful-my-turn.png)
 
 ## Adoption Success
 ![petful-adoption-success](/screenshots/petful-adoption-success.png)

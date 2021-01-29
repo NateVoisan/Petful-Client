@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import Context from "../ApiContext";
 import "./Description.css";
+import Doge from "./doge.png";
 
 export default function Description() {
   const history = useHistory();
@@ -32,11 +33,12 @@ export default function Description() {
         a dog. Be wary that you may only adopt either the cat or dog that is
         currently up for adoption.
       </p>
+      <h3>▼ Click on this beautiful doge to begin! ▼</h3>
       <img
         alt="adopt-me"
         onClick={() => adopt()}
         tabIndex="0"
-        src="https://media.kget.com/nxsglobal/kerngoldenempire/feature_pages/Clear-The-Shelters/2020/adopt-a-pet.jpg"
+        src={Doge}
       />
     </div>
   );
