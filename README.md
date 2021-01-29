@@ -1,9 +1,9 @@
 # Petful Client
-[Live App](https://petful-client-gamma.vercel.app)
+[Live App](https://petful-client-nu.vercel.app/)
 
 [Client Repo](https://github.com/NateVoisan/petful-client)
 
-[Heroku Live App](https://pacific-chamber-02247.herokuapp.com)
+[Heroku Live App](https://peaceful-brushlands-78318.herokuapp.com)
 
 [Server Repo/API Repo](https://github.com/NateVoisan/petful-server)
 
